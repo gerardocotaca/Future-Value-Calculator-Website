@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>401K Future Value Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="content">
+            <img src="FinancialInstitutionLogoImage.png" alt="Financial Institution Logo" class="logo">
+            <div class="form-container">
+                <h1>401K Future Value Calculator</h1>
+                <table>
+                    <tr>
+                        <td>Yearly Investment ($):</td>
+                        <td>
+                            <select id="investment"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Annual Interest Rate (%):</td>
+                        <td><input type="number" id="interestRate"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Years (#):</td>
+                        <td><input type="number" id="numYears"></td>
+                    </tr>
+                    <tr>
+                        <td>Future Value ($):</td>
+                        <td><input type="text" id="futureValue" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="calculateBtn">Calculate</button>
+                            <button id="clearBtn">Clear</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
